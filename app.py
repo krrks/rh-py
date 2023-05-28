@@ -12,4 +12,4 @@ def get_file(file_name):
     return "file not found."
 
 if __name__ == '__main__':
-    app.run(port=80)
+    app.run()
