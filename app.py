@@ -8,7 +8,7 @@ def hello_world():
 @app.route("/<file_name>", methods=["GET"])
 def get_file(file_name):
     if len(file_name) > 0:
-        return send_file(f"./{file_name}", attachment_filename=file_name)
+        return send_file(f"./{file_name}")
     return "file not found."
 
 if __name__ == '__main__':
