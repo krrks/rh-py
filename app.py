@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 def gpt_query(str_q):
     from EdgeGPT import Query, Cookie
-    q = Query("你是谁？用python代码给出回答")
+    q = Query(str_q)
     return q.sources
 
 
